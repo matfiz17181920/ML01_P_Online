@@ -4,7 +4,7 @@
 """
 Created on Sun Nov  3 17:25:41 2024
 
-@author: vadzim_shanchuk
+@author: vdzmshacu
 """
 
 #Программа для расчета расхода топлива

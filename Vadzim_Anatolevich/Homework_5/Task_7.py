@@ -2,7 +2,7 @@
 """
 Created on Sun Nov 17 20:53:54 2024
 
-@author: vdmsacu
+@author: vdzmshacu
 """
 
 import string;
