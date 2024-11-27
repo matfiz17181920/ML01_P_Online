@@ -27,4 +27,10 @@
 	+ `Classes`
 <hr>
 
+### HW 06
+- [ ] [Примеры работы с процесами и потоками](HW_06)
+	+ `thread`, `pool`, `multiprocessing`, `asyncio`, `aiohttp`.    
+- [ ] [Реализация декоратора](HW_06)
+	+ `functool`, `wrapper`. 
+<hr>
 
