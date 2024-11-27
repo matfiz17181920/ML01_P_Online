@@ -89,6 +89,7 @@ if __name__ == "__main__":
     print("Пример доступа к статическому свойству. Должно вывести количество букв в алфавите (26): ", end="")
     print(alph_en._EngAlphabet__letters_num)
 
+    print(2**999)
 
 """
 Out:
