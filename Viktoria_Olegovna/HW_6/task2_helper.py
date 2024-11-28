@@ -8,6 +8,7 @@ from urllib.request import urlopen
 
 URL = 'https://ru.123rf.com/%D0%A4%D0%BE%D1%82%D0%BE-%D1%81%D0%BE-%D1%81%D1%82%D0%BE%D0%BA%D0%B0/%D1%80%D0%BE%D0%B1%D0%BE%D1%82-%D1%81%D0%BE%D0%B1%D0%B0%D0%BA%D0%B0.html?imgtype=0'
 IMGS_FOLDER = os.path.join(os.path.dirname(__file__), 'data')
+PLOTS_FOLDER = os.path.join(os.path.dirname(__file__), 'plots')
 
 # get images urls from site
 def get_img_urls(url: str) -> list:
@@ -22,6 +23,11 @@ def clear_dataset_folder():
         shutil.rmtree(IMGS_FOLDER)     # remove folder with content
 
     os.mkdir(IMGS_FOLDER)
+
+# create folder for saving plots
+def create_plots_folder():
+    if not os.path.exists(PLOTS_FOLDER):
+        os.mkdir(PLOTS_FOLDER)
 
 # downloand one image by url
 def download(url: str, idx: int):
