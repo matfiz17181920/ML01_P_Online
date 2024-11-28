@@ -1,8 +1,10 @@
+import matplotlib.pyplot as plt
 import multiprocessing
 import time
 import os
 
-from task2_helper import get_img_urls, clear_dataset_folder, download, URL, IMGS_FOLDER
+from tqdm import tqdm
+from task2_helper import get_img_urls, clear_dataset_folder, create_plots_folder, download, URL, IMGS_FOLDER
 
 """
 Реализовать с использованием потоков и процессов скачивание файлов из интернета. 
@@ -14,7 +16,9 @@ from task2_helper import get_img_urls, clear_dataset_folder, download, URL, IMGS
 
 # download images in processes
 def multiprocessing_download():
-    for processes_count in range(1, MAX_PROCESSES_COUNT + 1):
+    time_list = list()
+
+    for processes_count in tqdm(range(1, MAX_PROCESSES_COUNT + 1)):
         time_start = time.time()
 
         clear_dataset_folder()
@@ -22,7 +26,17 @@ def multiprocessing_download():
             pool.starmap(download, [[img_urls[i], i] for i in range(len(img_urls))])
 
         time_end = time.time()
-        print('Processes count =', processes_count, 'Download', len(os.listdir(IMGS_FOLDER)), 'images\nTakes', time_end - time_start, 'sec\n')
+        time_delta = time_end - time_start
+        time_list.append(time_delta)
+
+        print('Processes count =', processes_count, 'Download', len(os.listdir(IMGS_FOLDER)), 'images\nTakes', time_delta, 'sec\n')
+
+    plt.plot(range(1, MAX_PROCESSES_COUNT + 1), time_list)
+    plt.title('Dependence time and processes count')
+    plt.grid()
+    plt.xlabel('processes count')
+    plt.ylabel('time,sec')
+    plt.savefig('plots/processing_plot.png')
 
 
 if __name__ == '__main__':
@@ -30,6 +44,8 @@ if __name__ == '__main__':
 
     img_urls = get_img_urls(URL)
     print('Get', len(img_urls), 'images links')
+
+    create_plots_folder()
     multiprocessing_download()
 
 

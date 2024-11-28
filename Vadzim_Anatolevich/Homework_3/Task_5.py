@@ -3,7 +3,7 @@
 """
 Created on Wed Nov 13 22:57:32 2024
 
-@author: vadzim_shanchuk
+@author: vdzmshacu
 """
 
 import glob;
