@@ -1,3 +1,6 @@
 *.venv/
 *data/
 __pycache__/
+*avi
+*mp4
+videos/
