@@ -4,7 +4,7 @@
 """
 Created on Sun Nov  3 18:17:27 2024
 
-@author: vadzim_shanchuk
+@author: vdzmshacu
 """
 
 #Определение функции
