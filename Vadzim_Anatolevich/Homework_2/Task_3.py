@@ -4,7 +4,7 @@
 """
 Created on Sun Nov  3 18:58:39 2024
 
-@author: vadzim_shanchuk
+@author: vdzmshacu
 """
 
 import array as arr

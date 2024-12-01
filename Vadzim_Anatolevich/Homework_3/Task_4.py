@@ -3,7 +3,7 @@
 """
 Created on Wed Nov 13 19:18:02 2024
 
-@author: vadzim_shanchuk
+@author: vdzmshacu
 """
 
 import re;
