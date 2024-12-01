@@ -2,13 +2,12 @@
 """
 Created on Wed Nov 20 19:03:03 2024
 
-@author: vdmsa
+@author: vdzmshacu
 """
 
 def cache(limit=3):
     def decorator_function(func):
         cache = [];
-
         def cache_function(*args):
             if args in cache:
                 result = cache[cache.index(args)];
