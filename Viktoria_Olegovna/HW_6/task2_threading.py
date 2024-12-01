@@ -1,8 +1,10 @@
+import matplotlib.pyplot as plt
 import concurrent.futures as cf
 import time
 import os
 
-from task2_helper import clear_dataset_folder, get_img_urls, download, IMGS_FOLDER, URL
+from tqdm import tqdm
+from task2_helper import clear_dataset_folder, get_img_urls, create_plots_folder, download, IMGS_FOLDER, URL
 
 """
 Реализовать с использованием потоков и процессов скачивание файлов из интернета. 
@@ -14,7 +16,9 @@ from task2_helper import clear_dataset_folder, get_img_urls, download, IMGS_FOLD
 
 # download images in treads
 def multithreading_downloading():
-    for threads_count in range(50, MAX_THREADS_COUNT + 1, 50):
+    time_list = list()
+
+    for threads_count in tqdm(range(50, MAX_THREADS_COUNT + 1, 50)):
         time_start = time.time()
         futures = list()
 
@@ -27,7 +31,17 @@ def multithreading_downloading():
                 pass
 
         time_end = time.time()
-        print('Threads count =', threads_count, 'Download', len(os.listdir(IMGS_FOLDER)), 'images\nTakes', time_end - time_start, 'sec\n')
+        time_delta = time_end - time_start
+        time_list.append(time_delta)
+
+        print('Threads count =', threads_count, 'Download', len(os.listdir(IMGS_FOLDER)), 'images\nTakes', time_delta, 'sec\n')
+
+    plt.plot(range(50, MAX_THREADS_COUNT + 1, 50), time_list)
+    plt.title('Dependence time and threads count')
+    plt.grid()
+    plt.xlabel('threads count')
+    plt.ylabel('time,sec')
+    plt.savefig('plots/threading_plot.png')
 
 
 if __name__ == '__main__':
@@ -35,6 +49,8 @@ if __name__ == '__main__':
 
     img_urls = get_img_urls(URL)
     print('Get', len(img_urls), 'images links')
+
+    create_plots_folder()
     multithreading_downloading()
 
 
