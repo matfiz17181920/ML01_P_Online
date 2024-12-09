@@ -21,9 +21,10 @@ def reverse_video(result_video_path, reverse_video_path, rotating_angle):
         ret, frame = video_capture_r.read();
         if ret != True:
             break;
-        resulting_reversed_angle = resulting_reversed_angle + reverse_frame_angle;
-        rotated_reversed_frame = rotate_function(frame, resulting_reversed_angle);
-        reverse_video_creator.write(rotated_reversed_frame);
+        else:    
+            resulting_reversed_angle = resulting_reversed_angle + reverse_frame_angle;
+            rotated_reversed_frame = rotate_function(frame, resulting_reversed_angle);
+            reverse_video_creator.write(rotated_reversed_frame);
     video_capture_r.release();
     reverse_video_creator.release();
     cv2.destroyAllWindows();
