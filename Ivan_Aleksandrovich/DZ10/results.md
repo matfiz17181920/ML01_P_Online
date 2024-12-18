@@ -11,4 +11,4 @@
 Траектория при использовании MIDAS+kornia 
 ![MIDAS+KORNIA](image-2.png)
 
-![Ссылка на оригинальное видео]([image-2.png](https://drive.google.com/file/d/1clIgyBMa-jIDo3of92evlZPPGfdJ1GIm/view?usp=sharing))
+[Ссылка на оригинальное видео](https://drive.google.com/file/d/1clIgyBMa-jIDo3of92evlZPPGfdJ1GIm/view?usp=sharing)
