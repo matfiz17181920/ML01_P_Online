@@ -4,4 +4,8 @@ __pycache__/
 *data/
 *photos/
 
+*slam/
+
 *.avi
+
+db_*
