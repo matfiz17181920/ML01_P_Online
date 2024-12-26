@@ -44,3 +44,7 @@
 - `Homework_11`
 - [ ] [ДЗ по лекции 13. Camera pose on a video](Homework_11)
 <hr>
+
+- `Homework_12`
+- [ ] [ДЗ по лекции 15. SQL](Homework_12)
+<hr>
