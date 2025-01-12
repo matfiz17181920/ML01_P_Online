@@ -48,3 +48,7 @@
 - `Homework_12`
 - [ ] [ДЗ по лекции 15. SQL](Homework_12)
 <hr>
+
+- `Homework_13`
+- [ ] [ДЗ по лекции 16. Начала ML](Homework_13)
+<hr>
