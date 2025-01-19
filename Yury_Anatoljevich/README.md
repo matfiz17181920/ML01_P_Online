@@ -52,3 +52,7 @@
 - `Homework_13`
 - [ ] [ДЗ по лекции 16. Начала ML](Homework_13)
 <hr>
+
+- `Homework_14`
+- [ ] [ДЗ по лекции 17. PCA](Homework_14)
+<hr>

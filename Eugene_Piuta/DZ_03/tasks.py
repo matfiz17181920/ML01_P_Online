@@ -92,7 +92,7 @@ words = [i for i in words_nlkt if i not in stop_words]
 # 4.3.2 Лемматизируем полученные слова с помощью pymorphy2
 morph = pymorphy2.MorphAnalyzer()
 words_morph = [morph.parse(i)[0].normal_form for i in words]
-
+print(f"{words_morph}")
 #4.3.3 Подсчитаем количество вхождений каждого слова
 amount = [words_morph.count(i) for i in words_morph]
 
