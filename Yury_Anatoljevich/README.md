@@ -56,3 +56,7 @@
 - `Homework_14`
 - [ ] [ДЗ по лекции 17. PCA](Homework_14)
 <hr>
+
+- `Homework_15`
+- [ ] [ДЗ по лекции 18. Decision Tree, 'Titanic' dataset](Homework_15)
+<hr>
