@@ -60,3 +60,7 @@
 - `Homework_15`
 - [ ] [ДЗ по лекции 18. Decision Tree, 'Titanic' dataset](Homework_15)
 <hr>
+
+- `Homework_16`
+- [ ] [ДЗ по лекции 20. K-means](Homework_16)
+<hr>
