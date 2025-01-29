@@ -44,3 +44,15 @@
 - `Homework_11`
 - [ ] [ДЗ по лекции 13. Camera pose on a video](Homework_11)
 <hr>
+
+- `Homework_12`
+- [ ] [ДЗ по лекции 15. SQL](Homework_12)
+<hr>
+
+- `Homework_13`
+- [ ] [ДЗ по лекции 16. Начала ML](Homework_13)
+<hr>
+
+- `Homework_14`
+- [ ] [ДЗ по лекции 17. PCA](Homework_14)
+<hr>
