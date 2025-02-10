@@ -68,3 +68,7 @@
 - `Homework_17`
 - [ ] [ДЗ по лекции 21. Регрессия на датасете Wallmart](Homework_17)
 <hr>
+
+- `Homework_18`
+- [ ] [ДЗ после лекции 23. Ансамбли моделей на датасете WineQuality](Homework_18)
+<hr>
