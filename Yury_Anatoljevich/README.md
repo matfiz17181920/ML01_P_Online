@@ -72,3 +72,7 @@
 - `Homework_18`
 - [ ] [ДЗ после лекции 23. Ансамбли моделей на датасете WineQuality](Homework_18)
 <hr>
+
+- `Homework_19`
+- [ ] [ДЗ после лекции 24. Предсказание временного ряда (Electricity Production)](Homework_19)
+<hr>
