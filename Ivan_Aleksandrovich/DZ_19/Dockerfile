@@ -4,7 +4,7 @@ WORKDIR /app
 
 COPY requirements.txt .
 COPY app.py .
-COPY model.pkl .
+COPY model.pickle .
 
 RUN pip install --no-cache-dir -r requirements.txt
 
