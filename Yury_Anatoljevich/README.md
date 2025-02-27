@@ -76,3 +76,7 @@
 - `Homework_19`
 - [ ] [ДЗ после лекции 24. Предсказание временного ряда (Electricity Production)](Homework_19)
 <hr>
+
+- `Homework_20`
+- [ ] [ДЗ после лекции 26. Docker containers](Homework_20)
+<hr>
