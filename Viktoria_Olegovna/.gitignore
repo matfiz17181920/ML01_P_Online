@@ -3,6 +3,7 @@ __pycache__/
 
 db_*
 *.npz
+*.pkl
 
 *model/
 catboost_info/
