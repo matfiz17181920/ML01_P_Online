@@ -18,7 +18,7 @@
 <hr>
 
 - `Homework_05`
-- [ ] [ДЗ по лекции 5. Обработка scv таблицы с помощью pandas](Homework_05)
+- [ ] [ДЗ по лекции 5. Обработка csv таблицы с помощью pandas](Homework_05)
 <hr>
 
 - `Homework_06`
@@ -75,4 +75,12 @@
 
 - `Homework_19`
 - [ ] [ДЗ после лекции 24. Предсказание временного ряда (Electricity Production)](Homework_19)
+<hr>
+
+- `Homework_20`
+- [ ] [ДЗ после лекции 26. Docker containers](Homework_20)
+<hr>
+
+- `Homework_21`
+- [ ] [ДЗ после лекции 28. Pyspark](Homework_21)
 <hr>
