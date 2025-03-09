@@ -7,3 +7,5 @@ db_*
 
 *model/
 catboost_info/
+
+*.keras
