@@ -86,7 +86,13 @@
 <hr>
 
 - `Homework_22`
-- [ ] [ДЗ после лекции 29. Простая нейронная сеть для произвольной задачи, ранее решенной с помощью классического ML (мы взяли Walmart.csv)](Homework_21)
+- [ ] [ДЗ после лекции 29. Простая нейронная сеть для произвольной задачи, ранее решенной с помощью классического ML (мы взяли Walmart.csv)](Homework_22)
 <hr>
 
+- `Homework_23`
+- [ ] [ДЗ после лекции 31. Image classification with a neural network)](Homework_23)
+<hr>
 
+- `Homework_24`
+- [ ] [ДЗ после лекции 32. EurSAT claccification with pretrained networks)](Homework_24)
+<hr>
