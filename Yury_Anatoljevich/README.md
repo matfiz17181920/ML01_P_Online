@@ -96,3 +96,7 @@
 - `Homework_24`
 - [ ] [ДЗ после лекции 32. EurSAT claccification with pretrained networks)](Homework_24)
 <hr>
+
+- `Homework_25`
+- [ ] [ДЗ после лекции 34. People age regression by photo)](Homework_25)
+<hr>
