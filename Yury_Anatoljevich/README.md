@@ -96,3 +96,11 @@
 - `Homework_24`
 - [ ] [ДЗ после лекции 32. EurSAT claccification with pretrained networks)](Homework_24)
 <hr>
+
+- `Homework_25`
+- [ ] [ДЗ после лекции 34. People age regression from photos)](Homework_25)
+<hr>
+
+- `Homework_26`
+- [ ] [ДЗ после лекции 36. People age classification by VIT pretrained network)](Homework_26)
+<hr>
