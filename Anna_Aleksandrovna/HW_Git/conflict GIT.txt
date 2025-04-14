@@ -1,0 +1,66 @@
+Ссылка на notion с полным описание ДЗ:
+https://www.notion.so/Git-136e8f8fbe6e8070ac53eeb4f854bcc9?pvs=4
+
+
+
+ТУТ НЕ ВИДНО КАРТИНКИ. ЗАХОДИТЕ В NOTION!
+
+# Создание и разрешение конфликта в Git
+
+Создаем текстовый документ example.txt с содержанием "Это первая строка." через функцию echo:
+
+$ echo "Это первая строка." > example.txt
+
+Коммитим по-старинки:
+$ git add example.txt
+$ git commit -m "Добавлен example.txt с первой строкой."
+Теперь создаем новую ветку branch1, в котрой также содаем новое изменение "Изменение из branch1." и коммитим ее :
+$ git checkout -b branch1
+$ echo "Изменение из branch1." >> example.txt
+$ git add example.txt
+$ git commit -m "Изменение в example.txt из branch1."
+
+С помощью команды checkout переходим в главную ветку main: 
+$ git checkout main
+
+Создаем вторую ветку branch2 и делаем все тоже самое, что и в первой ветке branch1: 
+$ git checkout -b branch2
+$ echo "Изменение из branch2." >> example.txt
+$ git add example.txt
+$ git commit -m "Изменение в example.txt из branch2."
+
+СОЗДАЕМ КОНФЛИКТ ПРИСЛИЯНИИ ВЕТОК
+
+С помощью команды checkout переходим в главную ветку main:
+$ git checkout main
+
+Делаем слояние веток main и branch1. 
+$ git merge branch1
+На этом этапе мы видим, что слияние прошло успешно, и изменения из branch1 были добавлены в main.
+
+Теперь пытаемся создать слияние с branch2:
+$ git merge branch2
+
+Нам показывает сообщение о конфликте:
+Auto-merging Anna_Aleksandrovna/example.txt
+CONFLICT (content): Merge conflict in Anna_Aleksandrovna/example.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+РЕШАЕМ КОНФЛИКТ С ПОМОЩЬЮ MELT
+
+Вбиваем:
+
+$ git mergetool
+
+далее у нас появляется окно Melt:
+
+![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/7c1be4b6-9839-4ee6-abf9-3078b3772ccb/52aead8c-6f9f-4e34-81fd-8507c02ccd61/image.png)
+
+тут мы исправлем все конфликты делая все 3 файла одинаковыми и сохраняем все.
+
+Переходим в Git:
+$ git add example.txt
+$ git commit -m "Разрешение конфликта с помощью Meld"
+$ git push
+
+**END.**
